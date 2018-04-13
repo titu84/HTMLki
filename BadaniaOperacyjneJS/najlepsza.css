@@ -1,0 +1,21 @@
+.x{
+    width: 18%;
+    margin: 1%;
+}
+.wynik{
+    width: 70%; 
+    margin: 1%;  
+}
+.boldFont{
+  font-weight: bold;
+}
+.boldFontUnderline{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.displayNone{
+    display: none;
+}
+.displayBlock{
+    display: block;
+}

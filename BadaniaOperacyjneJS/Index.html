@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Najlepsza w necie ;)</title>
+    <link rel="stylesheet" href="najlepsza.css">
+</head>
+
+<body>
+    <input type="radio" name="type" id="type1" value="t1">
+    <label for="t1">Dualny</label>
+    <input type="radio" name="type" id="type2" value="t2">
+    <label for="t2">Graficznie</label>
+    <hr>
+    <div id="dwaWarunki" class="displayNone">
+        <p>Warunki ograniczające</p>
+        <input type="number" step=".01" class='x' name="" id="x11"> x1
+        <input type="number" step=".01" class='x' name="" id="x12"> x2
+        <input type="number" step=".01" class='x' name="" id="x13"> x3
+        <input type="number" step=".01" class='x' name="" id="x14"> x4
+        <input type="number" step=".01" class='x' name="" id="x15"> x5
+        <input type="number" step=".01" class='x' name="" id="x16"> x6
+        <select id='selector11'>
+            <option value="0">?</option>
+            <option value="<"> &lt;</option>
+            <option value=">"> &gt;</option>
+            <option value="<="> &lt;=</option>
+            <option value=">="> &gt;=</option>
+            <option value="="> =</option>
+        </select>
+        <input type="number" step=".01" class='wynik' name="" id="wynik11">
+        <br>
+        <input type="number" step=".01" class='x' name="" id="x21"> x1
+        <input type="number" step=".01" class='x' name="" id="x22"> x2
+        <input type="number" step=".01" class='x' name="" id="x23"> x3
+        <input type="number" step=".01" class='x' name="" id="x24"> x4
+        <input type="number" step=".01" class='x' name="" id="x25"> x5
+        <input type="number" step=".01" class='x' name="" id="x26"> x6
+        <select id='selector21'>
+            <option value="0">?</option>
+            <option value="<"> &lt;</option>
+            <option value=">"> &gt;</option>
+            <option value="<="> &lt;=</option>
+            <option value=">="> &gt;=</option>
+            <option value="="> =</option>
+        </select>
+        <input type="number" step=".01" class='wynik' name="" id="wynik21">
+        <hr>
+        <p>Funkcja celu</p>
+        <input type="number" step=".01" class='x' name="" id="x31"> x1
+        <input type="number" step=".01" class='x' name="" id="x32"> x2
+        <input type="number" step=".01" class='x' name="" id="x33"> x3
+        <input type="number" step=".01" class='x' name="" id="x34"> x4
+        <input type="number" step=".01" class='x' name="" id="x35"> x5
+        <input type="number" step=".01" class='x' name="" id="x36"> x6
+        <br> =>
+        <select id='selector31'>
+            <option value="0">?</option>
+            <option value="MIN"> MIN</option>
+            <option value="MAX"> MAX</option>
+        </select>
+        <hr>
+    </div>
+    <div id="dwieZmianne" class="displayNone">
+        <p>Warunki ograniczające</p>
+        <input type="number" step=".01" class='x' name="" id="x111"> x1
+        <input type="number" step=".01" class='x' name="" id="x112"> x2
+        <select id='selector111'>
+            <option value="0">?</option>
+            <option value="<"> &lt;</option>
+            <option value=">"> &gt;</option>
+            <option value="<="> &lt;=</option>
+            <option value=">="> &gt;=</option>
+            <option value="="> =</option>
+        </select>
+        <input type="number" step=".01" class='x' name="" id="wynik111">
+
+        <br>
+        <input type="number" step=".01" class='x' name="" id="x121"> x1
+        <input type="number" step=".01" class='x' name="" id="x122"> x2
+
+        <select id='selector121'>
+            <option value="0">?</option>
+            <option value="<"> &lt;</option>
+            <option value=">"> &gt;</option>
+            <option value="<="> &lt;=</option>
+            <option value=">="> &gt;=</option>
+            <option value="="> =</option>
+        </select>
+        <input type="number" step=".01" class='x' name="" id="wynik121">
+        <br>
+        <input type="number" step=".01" class='x' name="" id="x131"> x1
+        <input type="number" step=".01" class='x' name="" id="x132"> x2
+        <select id='selector131'>
+            <option value="0">?</option>
+            <option value="<"> &lt;</option>
+            <option value=">"> &gt;</option>
+            <option value="<="> &lt;=</option>
+            <option value=">="> &gt;=</option>
+            <option value="="> =</option>
+        </select>
+        <input type="number" step=".01" class='x' name="" id="wynik131">
+        <br>
+        <input type="number" step=".01" class='x' name="" id="x141"> x1
+        <input type="number" step=".01" class='x' name="" id="x142"> x2
+        <select id='selector141'>
+            <option value="0">?</option>
+            <option value="<"> &lt;</option>
+            <option value=">"> &gt;</option>
+            <option value="<="> &lt;=</option>
+            <option value=">="> &gt;=</option>
+            <option value="="> =</option>
+        </select>
+        <input type="number" step=".01" class='x' name="" id="wynik141">
+        <br>
+        <input type="number" step=".01" class='x' name="" id="x151"> x1
+        <input type="number" step=".01" class='x' name="" id="x152"> x2
+        <select id='selector151'>
+            <option value="0">?</option>
+            <option value="<"> &lt;</option>
+            <option value=">"> &gt;</option>
+            <option value="<="> &lt;=</option>
+            <option value=">="> &gt;=</option>
+            <option value="="> =</option>
+        </select>
+        <input type="number" step=".01" class='x' name="" id="wynik151">
+        <br>
+        <input type="number" step=".01" class='x' name="" id="x161"> x1
+        <input type="number" step=".01" class='x' name="" id="x162"> x2
+        <select id='selector161'>
+            <option value="0">?</option>
+            <option value="<"> &lt;</option>
+            <option value=">"> &gt;</option>
+            <option value="<="> &lt;=</option>
+            <option value=">="> &gt;=</option>
+            <option value="="> =</option>
+        </select>
+        <input type="number" step=".01" class='x' name="" id="wynik161">
+        <hr>
+        <p>Funkcja celu</p>
+        <input type="number" step=".01" class='x' name="" id="x171"> x1
+        <input type="number" step=".01" class='x' name="" id="x172"> x2 =>
+        <select id='selector171'>
+            <option value="0">?</option>
+            <option value="MIN"> MIN</option>
+            <option value="MAX"> MAX</option>
+        </select>
+        <hr>
+    </div>
+
+    <div id='obliczDiv' class="displayNone">
+        <button id='oblicz'>Oblicz</button>
+    </div>
+    <div id="wynik1">
+    </div>
+    <script src="najlepsza.js"></script>
+</body>
+
+</html>
