@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tab th {
+            border: solid;
+            border-width: 1px;
+            box-shadow: 1px 1px 1px grey;
+            width: 9vh;
+            height: 8vh;
+        }
+
+        .tab th:hover {
+            background: blueviolet;
+        }
+
+        .wraper {
+            margin-left: 15%;
+            height: 90%;
+            width: 90vh;
+            border: solid;
+            min-width: 390px;
+
+        }
+
+        #result {
+            border-width: 1px;
+            border-color: black;
+            padding: 5px;
+            text-align: center;
+            color: red;
+
+        }
+    </style>
+</head> 
+<body>
+    <div class="wraper" id="result">
+        wynik
+    </div>
+    <div class="wraper">
+        <table class="tab" id="tab"></table>
+    </div>
+</body>
+<script>
+    let tab = document.querySelector('#tab')
+    for (let r = 1; r <= 10; r++) { 
+        let row = document.createElement('tr')
+        tab.appendChild(row)
+        for (let h = 1; h <= 10; h++) { 
+            let id = r.toString() + '*' + h.toString()
+            let th = document.createElement('th')
+            th.setAttribute('id', id)
+            th.setAttribute('value', (r * h).toString())
+            th.addEventListener('click', () => {
+                document.querySelector('#result').innerHTML = 'wynik = ' + (r * h).toString()
+            })
+            th.innerText = id
+            row.appendChild(th)
+        }
+    }  
+</script>
+</html>
