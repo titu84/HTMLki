@@ -1,0 +1,58 @@
+#formLayout{
+    border: rgb(230, 230, 230) solid 1px;
+    transition: all .2s ease-in-out;
+    box-shadow: #e0dee0 1px 1px;
+    border-radius: 3px;
+    padding: 3px;
+    font-family: sans-serif;
+    min-height: 30px;
+    max-width: 95%;
+    margin-left: 2%;     
+}
+#formLayout > header{
+    transition: all .2s ease-in-out;
+    color: #da6d00;
+    padding: 5px 10px;
+    border-bottom: inherit;
+    border-bottom-width: 90%;
+    font-family: inherit;    
+    font-size: larger;    
+}
+#formLayout > header:hover{  
+    padding: 5px 11px;
+}
+#formLayout > main{    
+    transition: all .1s ease-in-out;
+    color: inherit;
+    padding: inherit;
+    border-bottom: inherit;  
+    font-family: inherit;    
+}
+#formLayout > main:hover{  
+    padding-left: 4px;
+}
+#formLayout > main > span:hover{    
+    color: red;
+}
+#formLayout > footer{
+    transition: all .1s ease-in-out;
+    color:  rgb(180, 180, 180);
+    padding: inherit;
+    border-bottom: inherit;  
+    font-family: inherit; 
+    font-size: inherit;
+}
+#formLayout > footer:hover{
+    padding-left: 4px;
+    color: red;
+}
+#formLayout > footer:active {
+    padding-left: 4px;
+    color:blue;
+}
+#d{
+    margin-left: 1%;
+    height: 100%;
+    position: fixed;
+    border-left: #da6d00 solid 2px; 
+}
