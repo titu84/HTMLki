@@ -1,0 +1,13 @@
+.area{
+    width: 500px;
+    height: 500px;
+    border: solid black 2px;
+}
+#circle{
+    position: absolute;
+    border: solid 1px red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: red;
+}
